@@ -47,3 +47,8 @@ button>img {
     width: 20px;
     margin-left: 10px;
 }
+
+.dark-button {
+    background: #212EA0;
+    color: #fff;
+}
