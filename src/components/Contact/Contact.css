@@ -1,0 +1,64 @@
+.contact__section {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__section .left,
+.contact__section .right {
+    flex-basis: 48%;
+    color: #676767;
+}
+
+.contact__section .left h3 {
+    color: #000F38;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact__section .left h3>img {
+    width: 35px;
+    margin-left: 10px;
+}
+
+.contact__section .left>p {
+    max-width: 450px;
+    line-height: 1.6;
+}
+
+.contact__section .left>ul {
+    margin-top: 20px;
+}
+
+.contact__section .left>ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact__section .left>ul li img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.contact__section form :where(input, textarea) {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+    background-color: #EBECFE;
+}
+
+.contact__section form+span {
+    display: block;
+    margin: 20px 0;
+}

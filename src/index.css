@@ -29,7 +29,8 @@ a {
     padding-right: 10%;
 }
 
-button {
+button,
+.button {
     background: #fff;
     color: #212121;
     padding: 14px 25px;
@@ -43,7 +44,8 @@ button {
     justify-content: center;
 }
 
-button>img {
+button>img,
+.button>img {
     width: 20px;
     margin-left: 10px;
 }

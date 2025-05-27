@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [sticky, setSticky] = useState(false);
@@ -17,13 +18,56 @@ export default function Navbar() {
       </div>
       <div className="menu">
         <ul>
-          <li>Home</li>
-          <li>Program</li>
-          <li>About us</li>
-          <li>Campus</li>
-          <li>Testimonials</li>
           <li>
-            <button>Contact Us</button>
+            <Link to="hero__section" smooth={true} offset={0} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="programs" smooth={true} offset={-260} duration={500}>
+              Program
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="about__section"
+              smooth={true}
+              offset={-150}
+              duration={500}
+            >
+              About us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="campus__section"
+              smooth={true}
+              offset={-260}
+              duration={500}
+            >
+              Campus
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="testimonials__section"
+              smooth={true}
+              offset={-260}
+              duration={500}
+            >
+              Testimonials
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="contact__section"
+              smooth={true}
+              offset={-260}
+              duration={500}
+              className="button"
+            >
+              Contact Us
+            </Link>
           </li>
         </ul>
       </div>
