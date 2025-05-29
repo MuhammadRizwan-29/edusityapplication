@@ -2,12 +2,19 @@ import "./About.css";
 import about_img from "../../assets/about.png";
 import play_icon from "../../assets/play-icon.png";
 
-export default function About() {
+export default function About({ setPlayState }) {
   return (
     <section className="about__section">
       <div className="left">
         <img className="about_img" src={about_img} alt="About" />
-        <img className="play_icon" src={play_icon} alt="Play Icon" />
+        <img
+          className="play_icon"
+          src={play_icon}
+          alt="Play Icon"
+          onClick={() => {
+            setPlayState(true);
+          }}
+        />
       </div>
       <div className="right">
         <h3>ABOUT UNIVERISTY</h3>
