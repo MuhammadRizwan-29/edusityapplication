@@ -26,3 +26,50 @@ header.dark-nav {
     background-color: #212EA0;
     transition: 0.5s;
 }
+
+.menu__icon {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    header .logo img {
+        width: 140px;
+    }
+
+    .menu ul li {
+        margin: 10px 15px;
+    }
+}
+
+@media (max-width: 840px) {
+    header {
+        padding: 15px 0;
+    }
+
+    .menu ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #212EA0;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 25px 10px;
+    }
+
+    .menu__icon {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .menu ul.hide-mobile-menu {
+        right: -200px;
+    }
+}

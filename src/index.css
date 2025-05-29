@@ -54,3 +54,14 @@ button>img,
     background: #212EA0;
     color: #fff;
 }
+
+@media (max-width: 1200px) {
+    .px-10 {
+        padding-left: 5%;
+        padding-left: 5%;
+    }
+
+    button {
+        padding: 14px 22px;
+    }
+}
